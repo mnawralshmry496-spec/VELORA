@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8edeb">
+  <title>VELORA — أسلوبك، هويتك</title>
+  <meta name="description" content="اكتشف مجموعة VELORA من الملابس بتصميم راقٍ وبسيط.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">VELORA — تفاصيل صغيرة تصنع فرقاً كبيراً</div>
+  <header class="site-header">
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+    <a class="wordmark" href="#" aria-label="VELORA الرئيسية">VELORA</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">الرئيسية</a>
+      <a href="#collection">المجموعة</a>
+      <a href="#story">قصتنا</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <button class="cart-trigger" id="cartOpen" aria-label="فتح السلة">
+      <span>السلة</span><span class="cart-icon">▱</span><b id="cartCount">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE VELORA EDIT</p>
+        <h1>أناقة هادئة.<br><em>حضور لا يُنسى.</em></h1>
+        <p class="hero-description">قطع مختارة بعناية، بتفاصيل بسيطة وهوية واضحة.</p>
+        <a class="button button-dark" href="#collection">اكتشف المجموعة <span>←</span></a>
+        <div class="hero-note"><span class="note-line"></span> مجموعة VELORA الأولى</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85" alt="إطلالة أزياء عصرية" onerror="this.style.display='none'">
+        <div class="image-caption">EFFORTLESS BY DESIGN</div>
+      </div>
+      <div class="hero-side-label">VELORA / 001</div>
+    </section>
+
+    <section class="intro-strip">
+      <span>مصممة لتناسب يومك</span><span class="strip-star">✳</span>
+      <span>تفاصيل مدروسة</span><span class="strip-star">✳</span>
+      <span>أسلوب يبقى</span>
+    </section>
+
+    <section class="collection section-wrap" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR COLLECTION</p><h2>تسوّق المجموعة</h2></div>
+        <p>اكتشف القطع المتاحة واختر ما يناسب أسلوبك.</p>
+      </div>
+      <div class="filter-row category-filters" id="categoryFilters">
+        <button class="filter-chip active" data-category="all">كل المنتجات</button>
+        <button class="filter-chip" data-category="shirts">التيشيرتات</button>
+        <button class="filter-chip" data-category="perfumes">العطور</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="brand-story" id="story">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85" alt="تفاصيل أزياء" onerror="this.style.display='none'">
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">A LITTLE BOX. A LOT OF FEELING.</p>
+        <h2>ليست مجرد<br><em>قطعة ملابس.</em></h2>
+        <p>VELORA مساحة للتعبير عن أسلوبك من خلال اختيارات بسيطة، أنيقة، ومدروسة. نؤمن أن الأناقة لا تحتاج إلى مبالغة.</p>
+        <a href="#collection" class="text-link">تعرّف على المجموعة <span>←</span></a>
+      </div>
+    </section>
+
+    <section class="service-row">
+      <div><span class="service-icon">✧</span><h3>اختيارات مدروسة</h3><p>قطع نختارها بعناية.</p></div>
+      <div><span class="service-icon">◇</span><h3>طلب سهل</h3><p>أضف القطع إلى سلتك بسهولة.</p></div>
+      <div><span class="service-icon">♡</span><h3>نهتم بالتفاصيل</h3><p>من الاختيار حتى استلام طلبك.</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div><a class="wordmark footer-logo" href="#">VELORA</a><p>أسلوبك. هويتك.</p></div>
+      <div><h4>روابط</h4><a href="#collection">المجموعة</a><a href="#story">قصتنا</a></div>
+      <div><h4>تواصل</h4><a href="#" id="instagramLink">Instagram</a><a href="mailto:hello@velora.example">البريد الإلكتروني</a></div>
+      <div class="footer-tagline">A LITTLE BOX.<br>A LOT OF FEELING.</div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> VELORA. جميع الحقوق محفوظة.</span><span>صُنع بعناية.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات">
+    <div class="drawer-head"><h2>سلة المشتريات</h2><button class="close-button" id="cartClose" aria-label="إغلاق">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart">سلتك فارغة حالياً.</div></div>
+    <div class="cart-bottom">
+      <div class="cart-total"><span>الإجمالي</span><strong id="cartTotal">يحدد لاحقاً</strong></div>
+      <button class="button button-dark full-button" id="checkoutOpen">متابعة الطلب</button>
+      <p class="small-note">الأسعار وتكاليف التوصيل تُضاف بعد اعتماد تفاصيل المنتجات.</p>
+    </div>
+  </aside>
+
+  <div class="modal product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+    <div class="modal-head"><h2 id="productModalTitle">تفاصيل المنتج</h2><button class="close-button" id="productModalClose">×</button></div>
+    <div id="productModalBody"></div>
+  </div>
+
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-head"><h2 id="checkoutTitle">بيانات الطلب</h2><button class="close-button" id="checkoutClose">×</button></div>
+    <form id="checkoutForm">
+      <label>الاسم الكامل<input name="name" required placeholder="اكتب اسمك"></label>
+      <label>رقم الهاتف<input name="phone" required inputmode="tel" placeholder="07xxxxxxxxx"></label>
+      <label>المحافظة / المنطقة<input name="area" required placeholder="مثال: الموصل — ..." ></label>
+      <label>العنوان بالتفصيل<textarea name="address" rows="3" required placeholder="أقرب نقطة دالة والعنوان"></textarea></label>
+      <button class="button button-dark full-button" type="submit">إنشاء ملخص الطلب</button>
+      <p class="small-note">هذه نسخة أولية: ستتمكن من نسخ ملخص الطلب وإرساله عبر إنستغرام أو واتساب بعد ضبط بيانات التواصل.</p>
+    </form>
+    <div id="orderResult" class="order-result" hidden>
+      <p>تم تجهيز ملخص طلبك. انسخه وأرسله إلى حساب VELORA لتأكيد الطلب.</p>
+      <textarea id="orderText" rows="8" readonly></textarea>
+      <button class="button button-dark full-button" id="sendWhatsApp">إرسال الطلب عبر واتساب</button>
+      <button class="button button-outline full-button" id="copyOrder">نسخ ملخص الطلب</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
